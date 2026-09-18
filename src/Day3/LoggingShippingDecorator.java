@@ -2,6 +2,8 @@ package Day3;
 
 import Day3.ShippingDecorator;
 
+import java.util.logging.Logger;
+
 public class LoggingShippingDecorator extends ShippingDecorator {
 
     public LoggingShippingDecorator(ShippingService shippingService) {

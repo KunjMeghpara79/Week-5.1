@@ -5,11 +5,21 @@ import javax.print.attribute.standard.OrientationRequested;
 public class Order {
     //Required
     private String item;
+
+    public String getItem() {
+        return item;
+    }
+
     private String shippingAddress;
 
     //Optional
     private boolean giftWarp;
     private String discountCode;
+
+    public String getDeliveryNotes() {
+        return deliveryNotes;
+    }
+
     private String deliveryNotes;
     private PriorityFlag priorityFlag;
 
