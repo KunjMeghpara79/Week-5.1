@@ -14,6 +14,11 @@ public class Order {
 
     //Optional
     private boolean giftWarp;
+
+    public String getDiscountCode() {
+        return discountCode;
+    }
+
     private String discountCode;
 
     public String getDeliveryNotes() {
