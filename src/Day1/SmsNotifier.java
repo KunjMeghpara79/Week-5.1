@@ -1,0 +1,9 @@
+package Day1;
+
+public class SmsNotifier implements Notifier{
+    @Override
+    public void send(String message) {
+        System.out.println("SMS Provider : "+NotificationConfig.getInstance().getSmsProvider());
+        System.out.println("SMS : "+ message);
+    }
+}
