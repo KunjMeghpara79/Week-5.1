@@ -10,6 +10,4 @@ public class RequestContext {
     public void setStatus(RequestStatus requestStatus){
         this.requestStatus = requestStatus;
     }
-
-
 }
