@@ -18,7 +18,8 @@ public class Day4 {
                     CustomerType.VIP,
                     50000,
                     "Ahmedabad india",
-                    "VIP30"
+                    "VIP30",
+                    OrderStatus.UNPLACED
             );
 
 
@@ -76,7 +77,6 @@ public class Day4 {
             order.addListener(new AuditListener());
 
             System.out.println("----- ORDER PLACED -----");
-
-            order.notifyListeners(order);
+            order.placeOrder();
         }
 }

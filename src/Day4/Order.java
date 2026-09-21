@@ -11,15 +11,17 @@ public class Order {
     private String deliveryNotes;
     private CustomerType customerType;
     private double amount;
+    private OrderStatus orderStatus;
 
     public Order(String item, String deliveryNotes, CustomerType customerType,
-                 double amount, String deliveryAddress, String discountCode) {
+                 double amount, String deliveryAddress, String discountCode,OrderStatus orderStatus) {
         this.item = item;
         this.deliveryNotes = deliveryNotes;
         this.customerType = customerType;
         this.amount = amount;
         this.deliveryAddress = deliveryAddress;
         this.discountCode = discountCode;
+        this.orderStatus = orderStatus;
     }
     public String getDeliveryAddress() {
         return deliveryAddress;
@@ -27,6 +29,10 @@ public class Order {
 
     public String getItem() {
         return item;
+    }
+    public void placeOrder() {
+        this.orderStatus = OrderStatus.PLACED;
+        this.notifyListeners(this);
     }
 
     public String getDeliveryNotes() {
