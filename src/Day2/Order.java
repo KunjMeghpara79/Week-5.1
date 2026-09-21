@@ -5,28 +5,25 @@ import javax.print.attribute.standard.OrientationRequested;
 public class Order {
     //Required
     private String item;
+    private String shippingAddress;
+
+    //Optional
+    private boolean giftWarp;
+    private String discountCode;
+    private String deliveryNotes;
+    private PriorityFlag priorityFlag;
 
     public String getItem() {
         return item;
     }
 
-    private String shippingAddress;
-
-    //Optional
-    private boolean giftWarp;
-
     public String getDiscountCode() {
         return discountCode;
     }
 
-    private String discountCode;
-
     public String getDeliveryNotes() {
         return deliveryNotes;
     }
-
-    private String deliveryNotes;
-    private PriorityFlag priorityFlag;
 
     public void printOrder(){
         System.out.println("Item             : " + this.item);

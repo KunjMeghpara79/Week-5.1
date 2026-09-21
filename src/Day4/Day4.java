@@ -10,23 +10,19 @@ public class Day4 {
 
         public static void main(String[] args) {
 
-            // =========================
             // CREATE ORDER
-            // =========================
 
             Order order = new Order(
                     "Laptop",
                     "Normal delivery",
                     CustomerType.VIP,
                     50000,
-                    "ahmedabad india",
+                    "Ahmedabad india",
                     "VIP30"
             );
 
 
-            // =========================
             // 1. CHAIN OF RESPONSIBILITY
-            // =========================
 
             Stock stock = new Stock();
             stock.getOrderList().add("Laptop");
@@ -43,9 +39,7 @@ public class Day4 {
             stockChecker.handleCheck(order);
 
 
-            // =========================
             // 2. STRATEGY
-            // =========================
 
             DiscountStrategy strategy;
 
@@ -75,9 +69,7 @@ public class Day4 {
             System.out.println("Final amount: " + finalAmount);
 
 
-            // =========================
             // 3. OBSERVER
-            // =========================
 
             order.addListener(new EmailListener());
             order.addListener(new AnalyticsListener());
