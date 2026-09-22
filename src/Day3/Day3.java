@@ -1,7 +1,7 @@
 package Day3;
 
 public class Day3 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ThirdPartyShipping thirdPartyShipping = new ThirdPartyShipping();
         ShippingService shippingService = new ShippingAdapter(thirdPartyShipping);
         shippingService.ship("12345");
