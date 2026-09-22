@@ -1,8 +1,12 @@
 package Day5;
 
 public class RequestContext {
-    private RequestStatus requestStatus;
 
+
+    private RequestStatus requestStatus;
+    public RequestStatus getRequestStatus() {
+        return requestStatus;
+    }
     public RequestContext(){
         this.requestStatus = new PendingRequestStatus();
     }
