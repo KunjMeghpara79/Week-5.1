@@ -38,7 +38,7 @@ public class Order {
             System.out.println("Delivery Notes   : " + this.deliveryNotes);
        // }
         //if(this.priorityFlag != null){
-            System.out.println("Prioriy          : "+ this.priorityFlag);
+            System.out.println("Priority          : "+ this.priorityFlag);
        // }
     }
     private Order(OrderBuilder builder){
