@@ -4,7 +4,7 @@ public class NotificationConfig {
 
 
     /*
-    Eager initialization this will create the INSTANCE as soon the program starts
+    Eager initialization, this will create the INSTANCE as soon the program starts
      */
     private static final NotificationConfig INSTANCE =
             new NotificationConfig();
